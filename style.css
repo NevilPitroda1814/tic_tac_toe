@@ -1,47 +1,75 @@
-h2,h5{color: white;}
-.container{
-    display: grid;
-    grid-template-columns: repeat(3,10vw);
-    grid-template-rows: repeat(3,10vw);
-    justify-content: center;
-    margin-top: 5%;
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
 }
-.box{
-    border: 1px solid white;
+body{
     text-align: center;
-    justify-items: center;
-    font-size: 80px;
     color: white;
+    background-color: rgb(3, 3, 37);
 }
-.box:hover{
-    background-color: lightgray;
-    color: black;
-}
-.bl-0{
-    border-left: 0;
-}
-.br-0{
-    border-right: 0;
-}
-.bt-0{
-    border-top: 0;
-}
-.bb-0{
-    border-bottom: 0;
-}
-.btns{margin-top: 5%;}
-.btns button{
-    width: 20%;
-    padding: 3%;
-    margin: 5%;
-    border: 1px solid white;
+.startBtn{
+    padding: 10px 40px;
+    margin: 5px;
     font-size: 30px;
-    background-color: black;
+    border: 2px solid white;
+    background-color: rgb(3, 3, 37);
     color: white;
-    border-radius: 10%;
+    border-radius: 50px;
+    cursor: pointer;
 }
-.btns button:hover{
-    background-color: lightgray;
+h1{
+    font-size: 40px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    align-content: center;
+    margin: 5%;
+}
+#b1, #b2, #b3, #b4, #b5, 
+#b6, #b7, #b8, #b9 {
+    width: 80px;
+    height: 52px;
+    border: none;
+    font-size: 30px;
+    text-align: center;
+}
+.bb{border-bottom: 2px solid white;}
+.br{border-right: 2px solid white;}
+.bl{border-left:2px solid white;}
+.bt{border-top: 2px solid white;}
+
+input{
+    background-color: rgb(3, 3, 37);
+    color: white;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#resetBtn{
+    padding: 10px 25px;
+    margin: 3px;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 50px;
+    background-color: rgb(3, 3, 37);
+    border: 1px solid white;
+    color: white;
+}
+.header{
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+.header div{width: 5%;}
+.header h1{
+    width: 95%;
+    margin-left: -10px;
+}
+b{ font-weight: 900;}
+.header .tooltiptext{
+    background-color: white;
     color: black;
-    border: 0;
-} 
+    padding: 5px;
+    visibility: hidden;
+    border-radius: 10px;
+    display: inline-block;
+}
+.header a:hover .tooltiptext{ visibility: visible;}
